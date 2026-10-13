@@ -4,262 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPhone - Khám phá sản phẩm</title>
+    <title>        Simple web Development Template
+</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    
     <link rel="stylesheet" href="style.css">
 </head>
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <title>
+        Simple web Development Template
+    </title>
+</head>
+ 
 <body>
-
-    <!-- Thanh điều hướng -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand fs-4" href="#">
-                <i class="fa-brands fa-apple"></i>
-            </a>
-
-            <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav mx-auto gap-lg-4">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Trang chủ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Tính năng</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#design">Thiết kế</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#specifications">Thông số</a>
-                    </li>
-                </ul>
-
-                <a href="#buy" class="btn btn-primary rounded-pill px-4">
-                    Mua ngay
-                </a>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="logo.png">
             </div>
+            <li><a href="#web">Web Technology</a></li>
+            <li><a href="#program">C Programming</a></li>
+            <li><a href="#course">Courses</a></li>
+        </ul>
+ 
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
         </div>
     </nav>
-
-    <!-- Hero giới thiệu sản phẩm -->
-    <section id="home" class="hero-section text-center py-5">
-        <div class="container py-lg-5">
-            <p class="text-primary fw-semibold mb-2">IPHONE</p>
-
-            <h1 class="display-2 fw-bold">Một đẳng cấp mới.</h1>
-
-            <p class="lead text-secondary mt-3">
-                Thiết kế tinh tế. Hiệu năng mạnh mẽ. Trải nghiệm khác biệt.
-            </p>
-
-            <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap mt-4">
-                <a href="#features" class="btn btn-primary rounded-pill px-4 py-2">
-                    Khám phá ngay
-                </a>
-
-                <a href="#specifications" class="btn btn-outline-dark rounded-pill px-4 py-2">
-                    Tìm hiểu thêm
-                </a>
-            </div>
-
-            <div class="product-image mt-5">
-                <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=1000&q=85"
-                     alt="Điện thoại iPhone"
-                     class="img-fluid">
-            </div>
-        </div>
-    </section>
-
-    <!-- Tính năng nổi bật -->
-    <section id="features" class="py-5 bg-light">
-        <div class="container py-4">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold">Công nghệ tạo nên khác biệt.</h2>
-                <p class="text-secondary">
-                    Những tính năng nổi bật mang đến trải nghiệm tuyệt vời.
+ 
+    <section class="firstsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="web">
+                    Web Technology
+                </h1>
+                 
+                <p class="text-small">
+                    HTML stands for HyperText Markup
+                    Language. It is used to design
+                    web pages using a markup language.
+                    HTML is the combination of Hypertext
+                    and Markup language. Hypertext
+                    defines the link between the web
+                    pages. A markup language is used
+                    to define the text document within
+                    tag which defines the structure of
+                    web pages. HTML is a markup language
+                    that is used by the browser to
+                    manipulate text, images, and other
+                    content to display it in the required
+                    format.
                 </p>
-            </div>
-
-            <div class="row g-4">
-
-                <div class="col-md-4">
-                    <div class="feature-card bg-white rounded-4 shadow-sm p-4 h-100 text-center">
-                        <div class="feature-icon mb-3">
-                            <i class="fa-solid fa-camera"></i>
-                        </div>
-                        <h4 class="fw-bold">Camera chuyên nghiệp</h4>
-                        <p class="text-secondary mb-0">
-                            Ghi lại những khoảnh khắc ấn tượng với hình ảnh sắc nét và màu sắc sống động.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="feature-card bg-white rounded-4 shadow-sm p-4 h-100 text-center">
-                        <div class="feature-icon mb-3">
-                            <i class="fa-solid fa-microchip"></i>
-                        </div>
-                        <h4 class="fw-bold">Hiệu năng mạnh mẽ</h4>
-                        <p class="text-secondary mb-0">
-                            Xử lý nhanh chóng các tác vụ hằng ngày, giải trí và công việc.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="feature-card bg-white rounded-4 shadow-sm p-4 h-100 text-center">
-                        <div class="feature-icon mb-3">
-                            <i class="fa-solid fa-battery-full"></i>
-                        </div>
-                        <h4 class="fw-bold">Pin bền bỉ</h4>
-                        <p class="text-secondary mb-0">
-                            Tận hưởng trải nghiệm liền mạch trong công việc và giải trí.
-                        </p>
-                    </div>
-                </div>
-
+ 
             </div>
         </div>
     </section>
-
-    <!-- Khu vực thiết kế -->
-    <section id="design" class="py-5">
-        <div class="container py-4">
-            <div class="row align-items-center g-5">
-
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=1000&q=85"
-                         alt="Thiết kế điện thoại"
-                         class="img-fluid rounded-4 shadow">
-                </div>
-
-                <div class="col-lg-6">
-                    <p class="text-primary fw-semibold">THIẾT KẾ HIỆN ĐẠI</p>
-
-                    <h2 class="display-5 fw-bold">
-                        Tinh tế trong từng đường nét.
-                    </h2>
-
-                    <p class="text-secondary mt-4">
-                        Kiểu dáng hiện đại kết hợp cùng những chi tiết được hoàn thiện tỉ mỉ,
-                        tạo nên vẻ ngoài nổi bật và trải nghiệm sử dụng tiện lợi.
-                    </p>
-
-                    <div class="d-flex align-items-center gap-3 mt-4">
-                        <i class="fa-solid fa-mobile-screen-button fs-2 text-primary"></i>
-                        <div>
-                            <h5 class="fw-bold mb-1">Thiết kế nổi bật</h5>
-                            <p class="text-secondary mb-0">
-                                Phong cách hiện đại, dễ dàng sử dụng mỗi ngày.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-center gap-3 mt-4">
-                        <i class="fa-solid fa-shield-halved fs-2 text-primary"></i>
-                        <div>
-                            <h5 class="fw-bold mb-1">Bảo mật và riêng tư</h5>
-                            <p class="text-secondary mb-0">
-                                Các tính năng bảo mật hỗ trợ bảo vệ thông tin cá nhân.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Thông số sản phẩm -->
-    <section id="specifications" class="spec-section py-5">
-        <div class="container py-4">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold">Thông tin nổi bật</h2>
-                <p class="text-secondary">
-                    Một số yếu tố quan trọng khi lựa chọn điện thoại.
+ 
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="secondHalf">
+                <h1 class="text-big" id="program">
+                    C Programming
+                </h1>
+                <p class="text-small">
+                    C is a procedural programming language.
+                    It was initially developed by Dennis
+                    Ritchie as a system programming
+                    language to write operating system.
+                    The main features of C language include
+                    low-level access to memory, simple set
+                    of keywords, and clean style, these
+                    features make C language suitable for
+                    system programming like operating system
+                    or compiler development.
                 </p>
-            </div>
-
-            <div class="row g-4 text-center">
-
-                <div class="col-6 col-lg-3">
-                    <div class="spec-card p-4 rounded-4 h-100">
-                        <i class="fa-solid fa-display fs-2 text-primary mb-3"></i>
-                        <h5 class="fw-bold">Màn hình</h5>
-                        <p class="text-secondary mb-0">Hiển thị sống động</p>
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3">
-                    <div class="spec-card p-4 rounded-4 h-100">
-                        <i class="fa-solid fa-camera-retro fs-2 text-primary mb-3"></i>
-                        <h5 class="fw-bold">Camera</h5>
-                        <p class="text-secondary mb-0">Chụp ảnh sắc nét</p>
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3">
-                    <div class="spec-card p-4 rounded-4 h-100">
-                        <i class="fa-solid fa-bolt fs-2 text-primary mb-3"></i>
-                        <h5 class="fw-bold">Hiệu năng</h5>
-                        <p class="text-secondary mb-0">Phản hồi nhanh</p>
-                    </div>
-                </div>
-
-                <div class="col-6 col-lg-3">
-                    <div class="spec-card p-4 rounded-4 h-100">
-                        <i class="fa-solid fa-lock fs-2 text-primary mb-3"></i>
-                        <h5 class="fw-bold">Bảo mật</h5>
-                        <p class="text-secondary mb-0">Ưu tiên riêng tư</p>
-                    </div>
-                </div>
-
+ 
             </div>
         </div>
     </section>
-
-    <!-- Khu vực mua hàng -->
-    <section id="buy" class="py-5 text-center">
-        <div class="container py-4">
-            <i class="fa-brands fa-apple display-3"></i>
-            <h2 class="display-5 fw-bold mt-3">Sẵn sàng trải nghiệm?</h2>
-            <p class="text-secondary mt-3">
-                Khám phá dòng iPhone phù hợp với nhu cầu của bạn.
+ 
+    <section class="section">
+        <div class="paras">
+            <h1 class="sectionTag text-big">Java</h1>
+ 
+            <p class="sectionSubTag text-small">
+                Java has been one of the most
+                popular programming language
+                for many years. Java is Object
+                Oriented. However it is not
+                considered as pure object oriented
+                as it provides support for primitive
+                data types (like int, char, etc) The
+                Java codes are first compiled into byte
+                code (machine independent code). Then
+                the byte code is run on Java Virtual
+                Machine (JVM) regardless of the
+                underlying architecture.
             </p>
-
-            <a href="#home" class="btn btn-primary rounded-pill px-5 py-3 mt-3">
-                Khám phá sản phẩm
-                <i class="fa-solid fa-arrow-right ms-2"></i>
-            </a>
+ 
+        </div>
+ 
+        <div class="thumbnail">
+            <img src="img.png" alt="laptop image">
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-            <p class="mb-0">
-                <i class="fa-brands fa-apple me-2"></i>
-                Trang giới thiệu sản phẩm iPhone
-            </p>
-
-            <div class="d-flex gap-3">
-                <a href="#home" class="text-white text-decoration-none">Trang chủ</a>
-                <a href="#features" class="text-white text-decoration-none">Tính năng</a>
-                <a href="#buy" class="text-white text-decoration-none">Liên hệ</a>
-            </div>
-        </div>
+ 
+    <footer class="background">
+        <p class="text-footer">
+            Copyright ©-All rights are reserved
+        </p>
+ 
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
+ 
 </html>
-```
